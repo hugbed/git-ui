@@ -21,6 +21,7 @@ endif ()
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/modules/")
 
 # Dependencies
+set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
 add_subdirectory(deps/libgit2)
 
 # Targets
